@@ -30,7 +30,7 @@
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
 
-  fetch('https://raw.githubusercontent.com/shreydsaraf/map_files/refs/heads/main/suburb-10-nsw.geojson')
+  fetch('suburb-10-nsw.geojson')
     .then(response => response.json())
     .then(geojson => {
       const layer = L.geoJSON(geojson, {
