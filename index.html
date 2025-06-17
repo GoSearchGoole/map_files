@@ -30,7 +30,7 @@
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
 
-  fetch('suburb-10-nsw.geojson')
+  fetch('Conference_Glen_Waverley.geojson')
     .then(response => response.json())
     .then(geojson => {
       const layer = L.geoJSON(geojson, {
